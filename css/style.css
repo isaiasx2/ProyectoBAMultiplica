@@ -9,7 +9,16 @@
     --fuente-principal: 'Staatliches', cursive;
 
 }
-
+input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+  
+        input[type=number] {
+            -moz-appearance: textfield;
+        }
+      
 html {
     box-sizing: border-box;
     font-size: 62.5%;
@@ -108,7 +117,6 @@ html {
       background: -ms-linear-gradient(left, #b3008c 0%, #b3008c 20%, #9e0074 22%, #660047 51%, #a3006d 72%, #a3006d 100%);
       background: linear-gradient(to right, #b3008c 0%, #b3008c 20%, #9e0074 22%, #660047 51%, #a3006d 72%, #a3006d 100%);
       filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b3008c', endColorstr='#a3006d', GradientType=1 );
-      border-radius: 5rem;
       padding: 1rem 0;
       display: flex;
       justify-content: center;
@@ -205,7 +213,7 @@ html {
       -webkit-box-shadow: -4px 45px 22px -17px rgba(0,0,0,0.55);
       -moz-box-shadow: -4px 45px 22px -17px rgba(0,0,0,0.55);
       box-shadow: -4px 45px 22px -17px rgba(0,0,0,0.55);
-      border-radius: 5rem;
+      
     }
     .grafico{
       min-height: 30rem;
